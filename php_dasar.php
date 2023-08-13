@@ -16,17 +16,17 @@ for ($angka = 1; $angka <= 100; $angka++) {
         $panjang = $angka / 3;
         $lebar = $angka / 5;
         $hasil = luas_persegi($panjang, $lebar);
-        echo number_format($hasil, 2) . "\n";
+        echo number_format($hasil, 2) . "<br>";
     } elseif ($angka % 3 == 0) {
         $jari_jari = $angka / 3;
         $hasil = luas_lingkaran($jari_jari);
-        echo number_format($hasil, 2) . "\n";
+        echo number_format($hasil, 2) . "<br>";
     } elseif ($angka % 5 == 0) {
         $jari_jari = $angka / 5;
         $hasil = keliling_lingkaran($jari_jari);
-        echo number_format($hasil, 2) . "\n";
+        echo number_format($hasil, 2) . "<br>";
     } else {
-        echo number_format($angka, 2) . "\n";
+        echo number_format($angka, 2) . "<br>";
     }
 }
 ?>
